@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import
+'scss/_media',
+'scss/_util',
+'scss/mixins.scss',
+'scss/_globals.scss',
+'scss/ui/button.scss';
+
+
+@import
+'Components/Navigation/Navigation.scss',
+'Components/MainPage/MainPage.scss';
+
+

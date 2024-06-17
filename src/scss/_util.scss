@@ -1,0 +1,25 @@
+@import '_mixins';
+
+.container {
+    position: relative;
+    max-width: calc(var(--container-width) + var(--container-padding-y) * 2);
+    padding-inline: var(--container-padding-x);
+    margin-inline: auto;
+
+}
+
+.visually-hidden {
+    @include visually-hidden;
+}
+
+.hidden-mobile {
+    @include mobile {
+        display: none !important;
+    }
+}
+
+.visible-mobile {
+    @include mobile-above {
+        display: none !important;
+    }
+}
